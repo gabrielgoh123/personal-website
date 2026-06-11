@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+<head>
+<title>Project 2 | Gabriel Goh</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+<link href="css/style.css" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg px-3">
+    <!--Logo-->
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo-white.png" alt="Gabriel Goh Logo" id="logo-white">
+    </a>
+    <!--Mobile Hamburger-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+    </button>
+    <!--Nav-->
+    <div class="collapse navbar-collapse" id="nav">
+        <!--Desktop Navigation-->
+        <ul class="navbar-nav ms-3 d-none d-lg-flex">
+            <li class="nav-item dropdown">
+                <span class="dropdown-toggle">
+                    Who I am
+                </span>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <span class="dropdown-toggle">
+                    What I do
+                </span>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                    <li><a class="dropdown-item" href="news.html">News</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--Mobile Navigation-->
+        <ul class="navbar-nav ms-3 d-lg-none">
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact me</a>
+            </li>
+        </ul>
+        <!--Social Media-->
+        <ul class="navbar-nav ms-auto">
+            <!--LinkedIn-->
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/gabrieleugenegoh" target="_blank" aria-label="LinkedIn profile">
+                    <i class="bi bi-linkedin" style="font-size: 1.3rem;"></i>
+                </a>
+            </li>
+            <!--Email-->
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:gabriel.goh@mail.utoronto.ca" aria-label="Send email">
+                    <i class="bi bi-envelope-fill" style="font-size: 1.3rem;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Hero-->
+<div class="banner position-relative">
+    <!--Overlay-->
+    <div class="overlay">
+        <h1>Resume</h1>
+        <h3>Academic Background & Professional Experience</h3>
+    </div>
+</div>
+
+<!--Expertise-->
+<section class="container my-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Expertise</h2>
+    <div class="row text-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!--1-->
+        <div class="col d-flex flex-column align-items-center text-media-query">
+            <span class="mb-5">
+                <i class="bi bi-graph-up-arrow icon-blue" style="font-size: 4rem;"></i>
+            </span>
+            <h4 class="icon-title">Business Analysis</h4>
+            <p class="icon-description text-start">Experienced in conducting industry and company analyses, providing strategic reccomendations using a variety of digital tools such as financial research databases, Bloomberg Terminal, and Pitchbook. Skilled in Excel including charts and PivotTables.</p>
+        </div>
+        <!--2-->
+        <div class="col d-flex flex-column align-items-center text-media-query">
+            <span class="mb-5">
+                <i class="bi bi-megaphone icon-blue" style="font-size: 4rem;"></i>
+            </span>
+            <h4 class="icon-title">Marketing + Media Production</h4>
+            <p class="icon-description text-start">Knowledgeable in digital marketing strategies, including social media marketing and SEO practices. Experience in producing a variety of visual media such as photographs, social media posts, and graphics, and use of Canva.</p>
+        </div>
+        <!--3-->
+        <div class="col d-flex flex-column align-items-center text-media-query">    
+            <span class="mb-5">
+                <i class="bi bi-code-slash icon-blue" style="font-size: 4rem;"></i>
+            </span>
+            <h4 class="icon-title">Web Development & Design</h4>
+            <p class="icon-description text-start mb-5">Experienced in HTML, CSS, Bootstrap, and use of Media Queries, to create responsive websites. knowledgeable in design thinking, UI/UX principles, personas, information architecture, wireframing, prototyping, usability testing, and Adobe XD</p>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+<!--Education-->
+<section class="container py-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Education</h2>
+    <!--Education Start-->
+    <div class="row mb-4 text-media-query">
+        <div class="col-md-7 ">
+            <!--University-->
+            <p><b>University of Toronto,</b> Digital Enterprise Management, 
+            <b>CGPA:</b> <u><span data-bs-toggle="tooltip" data-bs-placement="top" title="Out of 4.0">3.73</span></u> (Sept 2022 - present)</p>
+            <!--High School-->
+            <p><b>Sekolah Pelita Harapan,</b> International Baccalaureate Diploma (July 2018 - May 2022)</p>
+        </div>
+    </div>
+    <!--Relevant Courses-->
+    <div class="row mb-5 text-media-query">
+        <div class="col-12">
+            <h4>Relevant Courses:</h4>
+            <p>
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT321: Introduction to Finance"
+                    data-bs-content="This course will provide students with an understanding of investment appraisal from a financial standpoint. It will provide them with the necessary tools to construct the financial component of a business plan and analyze the financial performance of a company. It will examine the practical problems of capital budgeting and highlight the techniques of performing ongoing monitoring of a company's financial health and risks."
+                >
+                    <u>Introduction to Finance</u>
+                </span>, 
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="MGT120: Introduction to Financial Accounting" 
+                    data-bs-content="Introduction to the theory and concepts of financial accounting. Students learn how to construct and interpret financial statements. Topics include an introductory understanding of accounting and the context within which accounting occurs."
+                >
+                    <u>Introduction to Financial Accounting</u>
+                </span>,
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT219: Media Economics I"
+                    data-bs-content="This course presents economic principles that explain how markets help organize exchange and production among competing but nevertheless cooperating economic units. Theories of consumer demand, the economic nature and function of business firms, optimal business decision rules of monopoly, oligopoly, and anti-combines regulations, as well as game theory, are presented. Efficiency criteria pertaining to the operation of firms and markets, the role of property rights, and the scope for public policy, are also examined."
+                >
+                    <u>Media Economics I</u>
+                </span>,
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT328: Project Management"
+                    data-bs-content="Covers approaches to managing complex projects including estimating, costing, scheduling, team management, quantitative methods, and applied projects."
+                >
+                    <u>Project Management</u>
+                </span>,
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT354: Digital Marketing II"
+                    data-bs-content="This course examines digital marketing strategies and the role of online and mobile advertising platforms. Students will explore how emerging technologies are used to facilitate B2B and B2C transactions. A number of domains will be covered (search, display, programmatic trading, mobile, social, etc.) to give students a comprehensive understanding of both existing marketing strategies and emerging trends. This class will emphasize the strengths and weaknesses of various approaches to digital marketing while helping students develop a greater understanding of the different elements of marketing campaigns from formulation and implementation to integration and assessment."
+                >
+                    <u>Digital Marketing II</u>
+                </span>,        
+                <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT261: Speculative Design I"
+                    data-bs-content="This introductory course in information architecture is a foundation of user interface design. Information architects work in organizations to design interfaces that enable users to find and navigate complex data via technology. Using architectural and design concepts to create and organize user-friendly information structures, this course includes exploring theories and hands-on practice with information organization, structure, categorization, representation, navigation and modeling."
+                >
+                    <u>Speculative Design I</u>
+                </span>,
+                  <span 
+                    data-bs-toggle="popover" 
+                    data-bs-trigger="hover focus" 
+                    data-bs-placement="top" 
+                    data-bs-title="CCT360: Web Development & Design II"
+                    data-bs-content="This course will introduce advanced standards-based frameworks that support the development of responsive front-end systems. Key concepts covered in this course include the application of advanced markup and design strategies, scripting languages applied to dynamic interactions, frameworks and code version control, and foundations of server-side implementations."
+                >
+                    <u>Web Development & Design II</u>
+                </span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="blue-background">
+
+<!--Experience-->
+<section class="container py-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Experience</h2>
+    <!--Experience Start-->
+    <div class="row mb-5 text-media-query">
+        <div class="col-12">
+            <!--1-->
+            <p><b>Business & Marketing Analyst, </b>Semper8 (September 2025 - Current)</p>
+            <ul>
+                <li><p>Extracted contact information of broadcasters and film production company executives for a lead series project in the UK and Spain</p></li>
+                <li><p>Conducted industry, company, financial and trend analysis on the facility management industry in North America using Bloomberg Terminal</p></li>
+            </ul>
+            <!--2-->
+            <p><b>Deals Advisory Intern, </b>PwC (May 2024 - August 2024)</p>
+            <ul>
+                <li><p>Conducted research on the SEA hydrotreated vegetable oil and sustainable aviation fuel market and helped design the PowerPoint teaser</p></li>
+                <li><p>Contributed in building a financial model for a greenfield ammonia refinery project and identified potential investors</p></li>
+            </ul>
+            <!--3-->
+            <p><b>Web Development Director, </b>DEM Association (June 2024 - April 2025)</p>
+            <ul>
+                <li><p>Led a team of 6 associates in planning, managing project timelines, and coordinating team efforts in designing the new website vision</p></li>
+                <li><p>Collaborated with multiple department heads to ensure the website aligns with the association's goals and brand</p></li>
+            </ul>
+            <!--4-->
+                   <p><b>Media Productions Associate, </b>DEM Association (January 2023 - April 2023)</p>
+            <ul>
+                <li><p>Produced a variety of visual content to showcase events and promote the association across multiple social media platforms</p></li>
+                <li><p>Utilized a variety of design tools such as Canva</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<!--Skills Section-->
+<section class="container py-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Skills</h2>
+    <!--Skills Start-->
+    <div class="row g-4 mb-5 text-media-query">
+        <div class="col-md-6">
+            <p>MS Excel</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>Bloomberg Terminal</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>PowerPoint</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>Canva</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>Bootstrap</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>Adobe XD</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+<!--Volunteering-->
+<section class="container py-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Volunteering</h2>
+    <!--Volunteering Start-->    
+    <div class="row text-media-query">
+        <div class="col-12">
+            <p><b>Student Volunteer, </b>Sekolah Pelita Harapan (Feb 2020)</p>
+            <ul>
+                <li><p>Organized and led games and activities for children at the Bantar Gebang Children's Ministry</p></li>
+            </ul>
+            <p><b>Student Volunteer, </b>Sekolah Pelita Harapan (Feb 2020)</p>
+            <ul>
+                <li><p>Assisted in teaching a science class for Iranian and Afghan refugees in Indonesia</p></li>
+            </ul>
+            <p><b>Student Volunteer, </b>Sekolah Pelita Harapan (Feb 2019)</p>
+            <ul>
+                <li><p>Visited Sekolah Lentera Harapan and beautified the campus by painting walls and creating murals with the students</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+<!--Honours & Awards-->
+<section class="container py-5">
+    <!--Title-->
+    <h2 class="text-center mb-5">Honours & Awards</h2>
+    <!--Table Start-->
+    <div class="table-responsive mb-3 text-media-query">
+        <table class="table table-striped align-middle">
+            <!--Table Header-->
+            <thead class="table-head">
+                <tr>
+                    <th>Award Name</th>
+                    <th>Description</th>
+                    <th>Issued By</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <!--Table Body-->
+            <tbody>
+                <tr>
+                    <td>Dean's List Scholar</td>
+                    <td>Awarded for the 2024-2025 academic year</td>
+                    <td>University of Toronto</td>
+                    <td>June 2025</td>
+                </tr>
+                <tr>
+                    <td>Dean's List Scholar</td>
+                    <td>Awarded for the 2023-2024 academic year</td>
+                    <td>University of Toronto</td>
+                    <td>May 2024</td>
+                </tr>
+                <tr>
+                    <td>Outstanding Presence Award</td>
+                    <td>Awarded for providing support by assisting majority of events</td>
+                    <td>DEM Association</td>
+                    <td>April 2024</td>
+                </tr>
+                <tr>
+                    <td>Dean's List Scholar</td>
+                    <td>CGPA 3.50 or higher at U of T Mississauga</td>
+                    <td>University of Toronto</td>
+                    <td>June 2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="footer mt-5 pt-5 pb-5">
+    <!--Links-->
+    <div class="container">
+        <ul class="d-flex gap-5 mt-5 mb-3 list-unstyled">
+            <li><a href="resume.html" class="footer-link">Resume</a></li>
+            <li><a href="projects.html" class="footer-link">Projects</a></li>
+            <li><a href="news.html" class="footer-link">News</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+        <hr>
+    <!--Logo & Copyright-->
+        <div class="d-flex align-items-end gap-4 mb-1">
+            <a href="index.html">
+                <img src="images/logo-black.png" alt="Gabriel Goh Logo" id="logo-black">
+            </a>
+            <p class="mb-0 copyright">CCT360 Project 2. Personal Website &copy; 2025 Gabriel Goh.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<!--Tooltips-->
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)                        
+})
+</script>
+<!--Popovers-->
+<script>
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))        
+</script>
+
+</body>
+</html>
